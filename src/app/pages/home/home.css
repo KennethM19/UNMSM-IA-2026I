@@ -1,0 +1,41 @@
+section {
+  padding: 2em;
+}
+
+.docente {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.datos-docente {
+  display: flex;
+  gap: 1rem;
+}
+
+.info-docente {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inicio {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 2rem;
+  gap: 1rem;
+}

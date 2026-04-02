@@ -1,0 +1,14 @@
+c-tabs {
+  height: 6rem;
+  display: block;
+}
+
+.content-tab {
+  display: flex;
+  justify-content: space-around;
+}
+
+.material-semana {
+  display: flex;
+  gap: 5rem;
+}

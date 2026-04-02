@@ -1,0 +1,16 @@
+<c-carousel [animate]="true" [interval]="5000" transition="crossfade">
+  <c-carousel-inner>
+    @for (slide of slides; track slide.src) {
+      <c-carousel-item>
+        <img
+          [src]="slide.src"
+          alt="{{slide.title}}"
+          class="d-block mx-auto"
+          loading="lazy"
+        />
+      </c-carousel-item>
+    }
+  </c-carousel-inner>
+  <c-carousel-control direction="prev" />
+  <c-carousel-control direction="next" />
+</c-carousel>
