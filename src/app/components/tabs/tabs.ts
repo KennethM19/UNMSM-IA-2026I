@@ -20,8 +20,8 @@ export class Tabs  implements OnInit {
       points: ['¿Qué es la Inteligencia Artificial?', 'Agente inteligente', 'Componenetes', 'Caso práctico: El "Grifo inteligente"'],
       summary: 'La presentación explica los fundamentos de la inteligencia artificial (IA), definiéndola como la capacidad de las máquinas para realizar tareas que normalmente requieren inteligencia humana. Se aborda el concepto de agente inteligente como unidad básica de la IA, destacando su capacidad de percibir el entorno mediante sensores, procesar información a través de lógica (software) y actuar mediante actuadores. Además, se diferencia entre agentes individuales y sistemas inteligentes complejos, y se resalta la integración entre hardware y software como base de la IA. Finalmente, se presenta un caso práctico denominado “grifo inteligente” para ilustrar la aplicación de estos conceptos en la vida real.',
       resourceLink: 'https://canva.link/i63aqe40itdvqhb',
-      labLink: 'https://stackblitz.com/angular-lab',
-      workLink: 'https://github.com/tu-repo/trabajo-angular'
+      labLink: '',
+      workLink: 'https://drive.google.com/file/d/1re6OqihvjUcWOMBYFBck_-7-YTQHQ_33/view?usp=drive_link'
     },
     {
       key: 1,

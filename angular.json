@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "IA-Hugo-Vega": {
+    "UNMSM-IA-2026I": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -57,10 +57,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "IA-Hugo-Vega:build:production"
+              "buildTarget": "UNMSM-IA-2026I:build:production"
             },
             "development": {
-              "buildTarget": "IA-Hugo-Vega:build:development"
+              "buildTarget": "UNMSM-IA-2026I:build:development"
             }
           },
           "defaultConfiguration": "development"
