@@ -19,7 +19,7 @@ export class Tabs  implements OnInit {
       title: 'Fundamentos de la Inteligencia Artificial',
       points: ['¿Qué es la Inteligencia Artificial?', 'Agente inteligente', 'Componenetes', 'Caso práctico: El "Grifo inteligente"'],
       summary: 'La inteligencia artificial es la capacidad de las máquinas para realizar tareas que normalmente requieren inteligencia humana, combinando el procesamiento lógico del software con la ejecución física del hardware. En este contexto, el agente inteligente es la unidad básica de la IA, capaz de percibir el entorno mediante sensores y actuar mediante actuadores, tomando decisiones a partir de una unidad de proceso (software). Además, se diferencian los agentes inteligentes (elementos individuales) de los sistemas inteligentes (conjuntos complejos de múltiples agentes). Finalmente, se destacan sus componentes principales y se ejemplifica su funcionamiento con casos prácticos como un “grifo inteligente”, que responde automáticamente a estímulos del entorno.',
-      resourceLink: 'https://canva.link/i63aqe40itdvqhb',
+      resourceLink: 'https://www.canva.com/design/DAHF6sPMg4c/hCFWRHhLCjJv43Z8FbulXA/edit',
       labLink: '',
       workLink: 'https://drive.google.com/file/d/1re6OqihvjUcWOMBYFBck_-7-YTQHQ_33/view?usp=drive_link'
     },
@@ -38,10 +38,10 @@ export class Tabs  implements OnInit {
       key: 2,
       start: new Date(2026, 3, 13),
       end: new Date(2026, 3, 19),
-      title: 'Introducción a Angular',
-      points: ['Componentes', 'Directivas', 'Servicios'],
-      summary: 'En esta clase veremos los fundamentos de Angular.',
-      resourceLink: 'https://angular.io/docs',
+      title: 'MÉTODOS DE BÚSQUEDA',
+      points: ['La búsqueda como método de resolución de problemas.', 'El Espacio de Estados', 'Búsqueda Ciega (No informada)', 'Búsqueda Informada (Heurística)'],
+      summary: 'Los métodos de búsqueda en inteligencia artificial son técnicas utilizadas para resolver problemas mediante la exploración de un conjunto de estados, definidos a partir de un estado inicial, acciones posibles, un modelo de transición, una prueba de objetivo y un costo asociado. Dentro de este enfoque, el espacio de estados representa todas las configuraciones alcanzables. Existen dos tipos principales: la búsqueda ciega, que no utiliza información adicional para guiarse (como BFS, DFS y costo uniforme), y la búsqueda informada, que emplea heurísticas para optimizar la exploración (como A* y la búsqueda voraz). Estos métodos se aplican en distintos contextos, como el procesamiento de grafos y la robótica, donde la eficiencia y la optimización en la toma de decisiones son fundamentales.',
+      resourceLink: 'https://canva.link/91bqd3e3u8pejkj',
       labLink: 'https://stackblitz.com/angular-lab',
       workLink: 'https://github.com/tu-repo/trabajo-angular'
     },
