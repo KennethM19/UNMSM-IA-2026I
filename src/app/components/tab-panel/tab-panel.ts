@@ -1,5 +1,5 @@
 import {Component, Input} from '@angular/core';
-import {ModalService} from '../../services/ModalService/modal-service';
+import {ModalService, LinkItem} from '../../services/ModalService/modal-service';
 
 
 @Component({
@@ -14,17 +14,27 @@ export class TabPanel {
   @Input() points: string[] = [];
   @Input() summary!: string;
 
-  @Input() resourceLink: string = '';
-  @Input() labLink: string = '';
-  @Input() workLink: string = '';
+  @Input() resourceLink: string | LinkItem[] = '';
+  @Input() labLink: string | LinkItem[] = '';
+  @Input() workLink: string | LinkItem[] = '';
 
   constructor(private modalService: ModalService) {}
 
-  openLink(link: string, title: string) {
-    if (!link || link.trim() === '') {
-      this.modalService.openModal(title, `${title} no disponible`);
+  openLink(link: string | LinkItem[], title: string) {
+    if (Array.isArray(link)) {
+      if (link.length === 1) {
+        window.open(link[0].url, '_blank');
+      } else if (link.length > 1) {
+        this.modalService.openModal(title, '', link);
+      } else {
+        this.modalService.openModal(title, `${title} no disponible`);
+      }
     } else {
-      window.open(link, '_blank');
+      if (!link || typeof link !== 'string' || link.trim() === '') {
+        this.modalService.openModal(title, `${title} no disponible`);
+      } else {
+        window.open(link, '_blank');
+      }
     }
   }
 }

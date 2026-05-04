@@ -6,7 +6,7 @@ import {
   ModalFooterComponent,
   ModalHeaderComponent, ModalTitleDirective
 } from '@coreui/angular';
-import {ModalService} from '../../../services/ModalService/modal-service';
+import {ModalService, LinkItem} from '../../../services/ModalService/modal-service';
 
 @Component({
   selector: 'app-element-not-available',
@@ -27,13 +27,15 @@ export class ElementNotAvailable implements OnInit {
   isVisible = false;
   modalTitle = '';
   modalMessage = '';
+  modalLinks: LinkItem[] = [];
 
   constructor(private modalService: ModalService) {}
 
   ngOnInit() {
-    this.modalService.modalTrigger$.subscribe(({title, message}) => {
+    this.modalService.modalTrigger$.subscribe(({title, message, links}) => {
       this.modalTitle = title;
-      this.modalMessage = message;
+      this.modalMessage = message || '';
+      this.modalLinks = links || [];
       this.isVisible = true;
     });
   }

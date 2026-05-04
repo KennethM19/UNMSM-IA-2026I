@@ -71,12 +71,18 @@ export class Tabs  implements OnInit {
       key: 5,
       start: new Date(2026, 4, 4),
       end: new Date(2026, 4, 10),
-      title: 'Introducción a Angular',
-      points: ['Componentes', 'Directivas', 'Servicios'],
-      summary: 'En esta clase veremos los fundamentos de Angular.',
-      resourceLink: 'https://angular.io/docs',
-      labLink: 'https://stackblitz.com/angular-lab',
-      workLink: 'https://github.com/tu-repo/trabajo-angular'
+      title: 'Métodos no supervisados',
+      points: ['Introducción', 'Métodos principales', 'Casos reales', 'Conclusión'],
+      summary: 'El aprendizaje no supervisado es una rama del Machine Learning que analiza datos sin etiquetas para descubrir patrones, relaciones o estructuras ocultas, sin necesidad de una respuesta previa definida. Se utiliza principalmente para agrupar datos similares (clustering), reducir la complejidad de la información (reducción de dimensionalidad), detectar anomalías como fraudes y encontrar relaciones no evidentes. Entre sus métodos más conocidos están K-Means, DBSCAN y PCA, y se aplica en casos reales como la segmentación de clientes o la detección de fraudes financieros. Aunque tiene ventajas como no requerir datos etiquetados y ser útil en grandes volúmenes de información, también presenta desafíos como la dificultad para evaluar resultados y la dependencia del algoritmo utilizado.',
+      resourceLink: 'https://canva.link/uatqzot3nhta0w2',
+      labLink: 'https://drive.google.com/file/d/1SHM29NPelzE6pZCGw_vQifjsl6t5Fwr3/view?usp=drive_link',
+      workLink: [
+        { name: 'Tarea 1', url: 'https://docs.google.com/presentation/d/1cduAOVO4NDpQK9r5PUEWLT3bGnc0Tgnhz2jVpZrmA1E/edit?usp=sharing' },
+        { name: 'Tarea 2', url: 'https://drive.google.com/drive/folders/1Seo-JZdarfU5krC_WznfWgLJj2lGLvme?usp=sharing' },
+        { name: 'Tarea 3', url: 'https://canva.link/mf3gvuphs2bfkaq' },
+        { name: 'Data set', url: 'https://drive.google.com/drive/folders/1Seo-JZdarfU5krC_WznfWgLJj2lGLvme?usp=sharing' },
+        { name: 'Tarea 4', url: 'https://colab.research.google.com/drive/1IGLg0wsi8G1RdxjpWz9pi1G-lZ2TpUiH?usp=sharing' }
+      ],
     },
     {
       key: 6,

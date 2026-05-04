@@ -17,7 +17,16 @@
   </c-modal-header>
 
   <c-modal-body class="custom-modal-body">
-    {{ modalMessage }}
+    @if (modalMessage) {
+      <p>{{ modalMessage }}</p>
+    }
+    @if (modalLinks.length > 0) {
+      <div class="links-list">
+        @for (link of modalLinks; track link.url) {
+          <a [href]="link.url" target="_blank" class="modal-link-item">{{ link.name }}</a>
+        }
+      </div>
+    }
   </c-modal-body>
 
   <c-modal-footer class="custom-modal-footer">
